@@ -1,0 +1,31 @@
+*Quick Description: The goal is to create a social website for people to "like" or "dislike" items in specific
+catagories that will either raise to the top or drop to the bottom of the "top lists". Users will create accounts
+and have friends and groups. Online Merchants can pay a small fee to have a "merchant account" to sell and
+display various goods through a specified top list.
+
+*How to find and use application: This will be initally releaesd for internet browsers and eventually with
+mobile apps for free.
+
+	-How to find our prototype: http://toplist.bdsys.net/
+								https://toplist.bdsys.net/
+								
+	-Long term location online: https://www.toplist.com
+								https://social.toplist.com
+								https://shop.toplist.com
+	
+	
+*Detailed Description: 
+	-Product: The Top Lists are tiered from very high level (I.E Top Lists of various top lists) to very specific (I.E: Rims on a specific vehicle). 
+The long term sustainable business model is to allow online merchants to set up shop based on this social 
+networking platform. 
+
+	-Technology: Top List is a web application project being developed with only front end languages so far.
+We are going to branch out to either ASP.NET or PHP for database connectivity and server-side operations. This
+Decision will be made by Black Dog Systems at a later time. 
+
+*Developer Info: This web application is being developed by Black Dog Systems (BDS) www.bdsys.net
+	-Lead Developer: Andrew Lass
+	
+*Copyright and legal disclosure: This application is available as a READ-ONLY open source. Alterations 
+can be made for private and prototype use. Andrew Lass owns all property associated to the code, domains 
+and photos used. 

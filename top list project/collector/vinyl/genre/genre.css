@@ -1,0 +1,241 @@
+/* body  {
+	background-image:url('http://images3.wikia.nocookie.net/__cb20121111062147/adventuretimewithfinnandjake/images/thumb/3/3e/Troll_Face.png/1259px-Troll_Face.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-attachment:fixed;
+} 
+*/
+
+* {
+	background-color:#838BB1;
+} 
+
+
+header > h1 {
+	font-family:Vivaldi, Verdana, sans-serif;
+	font-weight:900;
+	font-size:5em;
+	text-align:center;
+}
+
+header > table {
+	margin:auto;
+	text-align:center;
+	width:85em;
+	border:.5em solid black;
+}
+
+header td a:visited {
+	color:#662020;
+	text-decoration:none;
+}
+
+header td a:hover {
+	color:#808080;
+	text-decoration:underline;
+}
+
+header td {
+	background-color:#3D3D99;
+	border:.2em solid #6666FF;
+	padding:1em;
+}
+
+header td a {
+	background-color:#3D3D99;
+	font-family:Courier;
+	font-weight:500;
+	font-size:1.2em;
+	color:#6666FF;
+	text-decoration:none;
+}
+
+/* Above header is in every page | Below body is unique to this page */
+
+/* Below is the left toolbar container */
+
+body > div {
+	width:7.7em;
+	/*height:54.9em; */
+	height: 41.8em;
+	float: left;
+	border-right: .2em solid black;
+}
+
+body > div p {
+	font-family: cursive;
+	text-decoration:none;
+}
+
+body > div p:hover {
+	background-color:#662020;
+}
+
+body > div ul li:hover {
+	background-color:#662020;
+}
+
+body > div div {
+	height:2em;
+	width:7.5em;
+	background:white;
+}
+
+/*
+body > div {
+	width:7.6em;
+	height:54.9em;
+	background:red;
+	float: left;
+	border-right: .2em solid black;
+	position:fixed;
+}*/
+
+body > div:nth-child(2) {
+	border:0em;
+	width:100px;
+	height:300px;
+	background:#838BB1;
+	float: right;
+}
+
+/* Above is the left toolbar container */
+
+h1 {
+	font-family:Vivaldi, Verdana, sans-serif;
+	font-weight:900;
+	font-size:5em;
+	text-align:center;
+	
+}
+
+table {
+	margin:auto;
+	border:1em solid black;
+}
+
+h2 {
+	font-weight:500;
+	font-size:2em;
+	text-align:center;
+	font-family:cursive;
+}
+
+#back {
+	display:block;
+	height: 2.5em;
+	width: 2.5em;
+	margin:auto;
+}
+
+#back img {
+	height:2.5em;
+    width:2.5em;
+    border-radius:100%;  
+}
+
+
+th {
+	font-weight:500;
+	font-size:2em;
+	text-align:center;
+	font-family:cursive;
+}
+
+td {
+	
+	border: .2em solid black;
+	padding: 2em;
+}
+
+td a img {
+	height:8em;
+	width:8em;
+	border: .5em solid black;
+	margin-left:3.5em;
+}
+
+p {
+	text-align:center;
+}
+
+li {
+	font-family:Courier;
+	font-weight:800;
+}
+
+/* Below FOOTER is in every page | Above body is unique to this page */
+
+footer {
+	border-top: .2em solid black;
+}
+
+footer > a {
+	height: 2.5em;
+	width: 2.5em;
+}
+
+footer > a img {
+	height:2.5em;
+    width:2.5em;
+    border-radius:100%;  
+    border:0em;
+    
+}
+
+footer > div:nth-child(2) {
+	/*border: .2em solid orange;*/
+	display:inline-block;
+	margin:2em 2em 2em 10em;
+}
+
+footer > div:nth-child(2) ul li {
+	font-family:Courier;
+	font-size:1.5em;
+	text-decoration:none;
+}
+
+footer > div:nth-child(2) ul li:hover {
+	color:#662020;
+}
+
+footer > div:nth-child(3) {
+	/* border: .2em solid green; */
+	display:inline-block;
+	margin:2em 2em 2em 18em;
+}
+
+footer > div:nth-child(3) ul li {
+	font-family:Courier;
+	font-size:1.5em;
+	text-decoration:none;
+}
+
+
+footer > div:nth-child(3) ul li:hover {
+	color:#662020;
+}
+
+footer > div:last-child {
+	/*border: .2em solid black;*/
+	display:inline-block;	
+	float:right;
+	margin-right:2em;
+	font-family:cursive;
+	font-size:1em;
+	text-decoration:none;
+}	
+
+footer > div:last-child img {
+	border: .2em solid black;
+	height:3em;
+	width:3em;
+	margin-left: 5em;
+}
+
+footer >div:last-child p:last-child {
+	font:4em;
+	font-family:Vivaldi;
+	text-align: center;
+}
+

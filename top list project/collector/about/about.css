@@ -59,10 +59,6 @@ a {
 	text-decoration:none;
 }
 
-.unFinished {
-	border: .2em solid black;
-}
-
 /*Above are custom global conditions */
 
 /* Below is the header in every page, this includes the top screen H1 and nav bar */
@@ -103,6 +99,57 @@ header > h1 {
 	color:#6666FF;
 	text-decoration:none;
 }
+
+
+/* Below is the welcome banner which may be used  */
+
+.welcomeBanner {
+	display:inline-block;
+	position:fixed;
+	border: .2em solid black;
+	background-color: white;
+	height: 16em;
+	width: 20em;
+	margin: 20% auto auto 11%;
+	border-radius: 5%;
+}
+
+.welcomeBanner p:last-of-type {
+	margin-bottom: 3%;
+}
+
+.welcomeBanner form {
+	width: 60%;
+	margin: auto auto auto 5%;
+	float:left;
+}
+
+#signIn {
+	height: 6em;
+	width: 6em;
+	border: .2em solid black;
+	border-radius:20%;
+	background-color: #838BB1;
+	margin: auto auto auto 65%;
+}
+
+#signIn h6 {
+	text-align:center;
+	font-family: cursive;
+	margin-top: 35%;
+}
+
+.exitX {
+	float:right;
+	height: 5%;
+	width: 5%;
+}
+
+.welcomeBanner button {
+	margin: auto auto 5% 27%;
+}
+
+/*above is the welcome banner which may be used */
 
 /* Above header is in every page  */
 
@@ -232,66 +279,11 @@ header > h1 {
 	padding: 7%;
 }
 
-/*
-#myDisplay ul li form h6 {
-	border: .2em solid black;
-	float:right;
-}
-*/
-
 #myDisplay ul li:hover {
 	background-color:#838BB1;
 }
 
-/* Above is the left toolbar container */
-
-/* Below hover banner and stuff of this page */
-
-.welcomeBanner {
-	display:inline-block;
-	position:fixed;
-	border: .2em solid black;
-	background-color: white;
-	height: 16em;
-	width: 20em;
-	margin: 20% auto auto 11%;
-	border-radius: 5%;
-}
-
-.welcomeBanner p:last-of-type {
-	margin-bottom: 3%;
-}
-
-.welcomeBanner form {
-	width: 60%;
-	margin: auto auto auto 5%;
-	float:left;
-}
-
-#signIn {
-	height: 6em;
-	width: 6em;
-	border: .2em solid black;
-	border-radius:20%;
-	background-color: #838BB1;
-	margin: auto auto auto 65%;
-}
-
-#signIn h6 {
-	text-align:center;
-	font-family: cursive;
-	margin-top: 35%;
-}
-
-.exitX {
-	float:right;
-	height: 5%;
-	width: 5%;
-}
-
-.welcomeBanner button {
-	margin: auto auto 5% 27%;
-}
+/*Below is the pull tab function to hide/show the left tool bar. This is in the main body of each page */
 
 .showBar, .hideBar {
 	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
@@ -319,124 +311,120 @@ header > h1 {
 	text-align: center;
 }
 
-
-
-/* below is the main body of this page */
-
-.welcomeTable {
-	display:inline-block;
-	height: 20%;
-	width: 10%;
-	margin: 2% 10% auto auto;
-	float: right;
-	font-family: cursive;
-}
-
-#spaceBetween {
-	padding-left: .5em;
-	padding-right: .5em;
-}
-
-.signInForm {
-	height: auto;
-	width: 100%;
-	margin-top: 20%;
-}
-
-
-.topListsTable {
-	height: auto;
-	width: 15%;
-	margin: 20% auto auto auto;
-	float:right;
-	overflow:hidden;
-}
-
-.topListsTable th {
-	height: 2em;
-	width: 2em;
-	font-family:"Book Antiqua", Tahoma, serif;
-	border-bottom: .2em solid black;
-}
-
-.topListsTable li {
-	height: 1.2em;
-	width: 1.2em;
-	font-family:"Book Antiqua", Tahoma, serif;
-	margin-top: 1%;
-}
-
-.top5ListTable {
-	display:inline-block;
+/* Above is the pull tab function /*
+ 
+/* Below is the unique main body */
+ 
+.infoPane h2 {
+ 	text-align: center;
+ }
+ 
+.aboutTitle {
 	height: auto;
 	width: 20%;
-	margin: 3% auto auto 2%;
+	margin: 5% auto 2% 10%;
+	font-size: 3em;
+	font-family: tahoma, sans-serif;
+}
+ 
+.aboutTable {
+ 	height: auto;
+ 	width: auto;
+ 	float: left;
+ 	margin: auto auto auto auto;
+}
+
+.aboutGridCell {
+	height: auto;
+	width: auto;
+	margin: 1em;
 	border: .2em solid black;
+} 
+ 
+.hoverText {
+	font-weight:700;
+	font-size: 2em;
+	font-family:"Agency FB", Tahoma, sans-serif;
+	position: absolute;
+	margin: -15% auto auto 1%;
 	float: left;
-	font-family:"Agency FB";
-	overflow: hidden;
+	z-index: 1;
 }
-
-.topBox {
-	border-top: .2em solid black;
-	border-bottom: .2em solid black;
-}
-
-.topBox img {
-	height: 70%;
-	width: 40%;
-	padding: 1em;
-	border-right: .2em solid black;
-	margin: auto auto auto auto;
-	float: left;
-}
-
-.topBox h6 {
+ 
+.infoPane {
+	height: 30%;
+	width: 30%;
+	margin: auto 15% auto auto;
+	border: .2em solid black;
 	float: right;
-	margin: 10% 2% auto auto;
-	overflow:hidden;
 }
 
-.newsTable {
+.infoTitle {
 	height: auto;
-	width: 20%;
-	border: .5em solid black;
-	margin: 2% auto auto auto;
-	font-family: cursive;
-	overflow: hidden;
-}
-
-.newsTable th {
-	border-bottom: .2em solid black;
-}
-
-.newsArticle {
-	height: 40%;
-	width: 80%;
-	margin: auto auto auto auto;
-	overflow: hidden;
-	padding-bottom: .5em;
-	border-bottom: .2em solid black;
-	text-align: center;
-}
-
-.newsArticle h2 {
-	margin-top: 5%;
+	width: 74%;
+	margin: auto auto 5% 15%;
+	font-size: 3em;
+	font-family: tahoma, sans-serif;
 	border-bottom: .1em solid black;
 }
-
-.newsArticle p {
-	margin-top: 5%;
-	font-family:"Book Antiqua", Tahoma, serif;
-	font-size: 1em;
-}
-
-#huge {
-	height: 59em;
+ 
+.infoText {
+	height: auto;
 	width: auto;
+	margin: auto auto auto auto;
+	font-family: cursive, tahoma, sans-serif;
+	font-size: 1.5em;
+	padding: .5em;
 }
 
-/* Above is the mian body */
+.careTable {
+	
+}
+
+.carePic {
+	margin: 5% auto 5% auto;
+	float: left;
+}
+
+.careTxt {
+	margin: -20% auto 5% 30%;
+	float: right;
+}
+
+#codeCad {
+	height: 55%;
+	width: 65%;
+	margin-left: 4%;
+}
+
+#mePhoto {
+	height: 100%;
+	width: 100%;
+}
+ 
+#facebookPic {
+	height: 7%;
+	width: 22%;
+}
+
+#KickPic {
+	height: 50%;
+	width: 22%;
+	margin-top: 10%;
+} 
+
+#twitPic {
+	height: 40%;
+	width: 22%;
+}
+
+ #spaceHolder {
+ 	height: 47em;
+ 	width: auto;
+ }
+ 
+
+/* Above is the main body of this page */
 
 /* Below FOOTER is in every page | Above body is unique to this page */
 

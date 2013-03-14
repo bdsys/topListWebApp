@@ -8,6 +8,7 @@ mobile apps for free.
 
 	-How to find our prototype: http://toplist.bdsys.net/
 								https://toplist.bdsys.net/
+								http://parked.bdsys.net/collection/
 								
 	-Long term location online: https://www.toplist.com
 								https://social.toplist.com
@@ -23,9 +24,52 @@ networking platform.
 We are going to branch out to either ASP.NET or PHP for database connectivity and server-side operations. This
 Decision will be made by Black Dog Systems at a later time. 
 
+	-Verison Control: We embrace the branch version control by using four branches, as follows:
+		-Version Design: V(ersion)A.B.C.D (I.E: V6.2.3.1)
+			-Other: Each version has more autority than the one below it (higherarchy is in alphabetical order). As each version increments 
+					up, the version control numbers below that will reset to zero. 
+					I.E "V3.5" suggests no bugs branch has merged into it, where as "V3.5.2" suggests that two seperate bugs branches has been
+					merged since the fifth minor feature release was merged into the third major feature release version of the master branch.
+					
+						 -A: Major Features release 
+							-Branch Name: Major
+							-Other: Alpha and Beta will NEVER reach higher than "0" in this catagory as this is preserved for the live production 
+								ready application. 
+								-Other II: A "Major" feature release is any feature push that contains a largely noticible change to how 
+											users experience AND/OR use the web application. This CAN include significant UX and UI 
+											graphical changes. This may also include major improvments and feature implementations to 
+											already existing feature sets of the product.
+							-Example: V1
+							
+						 -B: Minor Features release 
+							Branch: Minor
+							Other: A "Minor" release is any feature push that contains a minor to moderately noticible change to how users
+								   experience AND/OR use the web application. These changes are most common and can contain any thing except
+								   bug fixes. This branch will add flexability and further advance the existing A branch. 
+							-Example: V1.1
+								   
+						 -C: General Bug Fixes
+							 Branch: Bugs
+							 Other: A "Bugs" release is a push that contains ANY fix to the web application. This includes fixes to any faccet
+									of the software from core elements to major and minor features. These branches are to be well thought out and
+									released proceedurly. These bugs, while known to be a problem, are NOT bugs that significantly limit the
+									functionality of the web application and can wait.
+							-Example: V1.1.1
+							
+						 -D: Hotfixs
+							 Branch: Hotfix
+							 Other: A "Hotfix" releaes is a push that contains a fix that is significantlt imparing the web application. These are fixes
+									that have been released faster than a traditionally planned bug fixes.
+							-Example: V1.1.1.1
+		
+
 *Developer Info: This web application is being developed by Black Dog Systems (BDS) www.bdsys.net
 	-Lead Developer: Andrew Lass
+
+*How to work on this project: Once you have been given permission to pull, you MUST follow version control and sign each product contribution in 
+							  the form of a comment. Please use comments to label HTML/CSS segments and to label what scripts and back end
+							  code is doing. 
 	
-*Copyright and legal disclosure: This application is available as a READ-ONLY open source. Alterations 
-can be made for private and prototype use. Andrew Lass owns all property associated to the code, domains 
+*Copyright and legal disclosure: This application is available as an open;y sourced project to those following guide lines set above. Alterations 
+can be made for private and prototype use unless approved by Black Dog Systems. Andrew Lass owns all property associated to the product. including but, not limitd to: code, domains 
 and photos used. 

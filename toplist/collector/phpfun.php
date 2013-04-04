@@ -175,6 +175,14 @@
         			$userName = "Andrew";
 					$userAge = 23;
 					echo "My name is" ." ". $userName ." ". "and I'm" ." ". $userAge ." ". "years old!";
+					
+					if ($userName == "Andrew" && $userAge == 23) {
+						echo "That is indeed his name and age! I should know, my logical control flow tells me so!";
+					} elseif ($userName == "Andrew" && $userAge != 23) {
+						echo "That's his name but that age ain't right!";
+					} else {
+						print "srsly who cares, this flow will never get this far!";
+					}
         		?>
         	</p>
         	

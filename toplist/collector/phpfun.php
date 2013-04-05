@@ -11,31 +11,8 @@
     </head>
       <!-- Everything below this in every site -->
     <body>
+
     	
-    	<!-- Below is a fixed welcome banner ONLY ON THIS PAGE -->
-    	
-    	<div class="welcomeBanner">
-        	<img class="exitX" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFzLSTJ4t4PSRlYjKkGf_45ikmwEt1TaikQNWwH_DIncNlKziz-w" />
-        	<p> Welcome! </p>
-        	<br>
-        	<p>Looks like this is your first time visting.</p>
-        	<br>
-        	<a href="/collector" target="_blank"><button>Register an account</button></a>
-        	<br>
-        	<p> Click <a href="http://www.bdsys.net/" target="_blank">here</a>
-        	   for more information.</p>
-        	<br>
-        	
-        	<form>
-        		Username: <input type="text" name="username"/>
-        		<br>
-        		<br>
-        		Password: <input type="password" name="password" />
-        	</form>
-        	<div id="signIn">
-        		<h6>Sign In</h6>
-        	</div>
-        </div>
     	
     	 <!-- Header below is on every page -->
     	 
@@ -163,7 +140,7 @@
         
         <!-- Below is the unique main body -->
         
-        
+        <div id="phpCenter">
         	<h2>
         		<?php
         			echo "Howdy, Friends!";
@@ -185,7 +162,136 @@
 					}
         		?>
         	</p>
-        	
+        	<br>
+        	<p>
+        		<?php
+        			$recordYear = 1974;
+        			$recordQuality = "Like New";
+        			$recordRarity = "Epic";
+					$recordEra = "";
+					$currentTime = time();
+					$currentYear = 2013;
+					
+					switch ($recordYear) {
+						case $recordYear <= 1975 && $recordYear >= 1960:
+							$recordEra = "Modern Classic";
+							break;
+						case $recordYear <= 1959 && $recordYear >= 1945:
+							$recordEra = "Oldies";
+							break;
+						case $recordYear >=1975 && $recordYear <=1989:
+							$recordEra = "Adult Contemporary";
+						case $recordYear >= $currentYear - 20 && $recordYear <= $currentYear -6:
+								$recordEra = "Modern Contemporary";
+								break;
+						case $recordYear >= $currentYear -5:
+							  $recordEra = "Modern";
+								break; 
+					}
+					echo "Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . "."; \n;
+					echo "This makes it " . $recordRarity . "!"; \n;
+					echo "The quality of your record is " . $recordQuality . "."; \n;
+					echo "The current time is " . $currentTime . " and year is " . $currentYear . ".";
+					echo ". why did I tell you this? Because, I made variables and didn't want them to go to waste";					
+        		?>
+        		</p>
+        		<p>
+        		<?php
+        			$recordYear = 1950;
+        			$recordQuality = "Like New";
+        			$recordRarity = "Epic";
+					$recordEra = "";
+					$currentTime = time();
+					$currentYear = 2013;
+					
+					switch ($recordYear) {
+						case $recordYear <= 1975 && $recordYear >= 1960:
+							$recordEra = "Modern Classic";
+							break;
+						case $recordYear <= 1959 && $recordYear >= 1945:
+							$recordEra = "Oldies";
+							break;
+						case $recordYear >=1975 && $recordYear <=1989:
+							$recordEra = "Adult Contemporary";
+						case $recordYear >= $currentYear - 20 && $recordYear <= $currentYear -6:
+								$recordEra = "Modern Contemporary";
+								break;
+						case $recordYear >= $currentYear -5:
+							  $recordEra = "Modern";
+								break; 
+					}
+					echo "Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . "."; \n;
+					echo "This makes it " . $recordRarity . "!"; \n;
+					echo "The quality of your record is " . $recordQuality . "."; \n;
+					echo "The current time is " . $currentTime . " and year is " . $currentYear . ".";
+					echo ". why did I tell you this? Because, I made variables and didn't want them to go to waste";					
+        		?>
+        		</p>
+        		<p>
+        		<?php
+        			$recordYear = 1920;
+        			$recordQuality = "Like New";
+        			$recordRarity = "Epic";
+					$recordEra = "";
+					$currentTime = time();
+					$currentYear = 2013;
+					
+					switch ($recordYear) {
+						case $recordYear <= 1975 && $recordYear >= 1960:
+							$recordEra = "Modern Classic";
+							break;
+						case $recordYear <= 1959 && $recordYear >= 1945:
+							$recordEra = "Oldies";
+							break;
+						case $recordYear >=1975 && $recordYear <=1989:
+							$recordEra = "Adult Contemporary";
+						case $recordYear >= $currentYear - 20 && $recordYear <= $currentYear -6:
+								$recordEra = "Modern Contemporary";
+								break;
+						case $recordYear >= $currentYear -5:
+							  $recordEra = "Modern";
+								break; 
+					}
+					echo "Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . "."; \n;
+					echo "This makes it " . $recordRarity . "!"; \n;
+					echo "The quality of your record is " . $recordQuality . "."; \n;
+					echo "The current time is " . $currentTime . " and year is " . $currentYear . ".";
+					echo ". why did I tell you this? Because, I made variables and didn't want them to go to waste";					
+        		?>
+        		</p>
+        		<p>
+        		<?php
+        			$recordYear = 2010;
+        			$recordQuality = "Like New";
+        			$recordRarity = "Epic";
+					$recordEra = "";
+					$currentTime = time();
+					$currentYear = 2013;
+					
+					switch ($recordYear) {
+						case $recordYear <= 1975 && $recordYear >= 1960:
+							$recordEra = "Modern Classic";
+							break;
+						case $recordYear <= 1959 && $recordYear >= 1945:
+							$recordEra = "Oldies";
+							break;
+						case $recordYear >=1975 && $recordYear <=1989:
+							$recordEra = "Adult Contemporary";
+						case $recordYear >= $currentYear - 20 && $recordYear <= $currentYear -6:
+								$recordEra = "Modern Contemporary";
+								break;
+						case $recordYear >= $currentYear -5:
+							  $recordEra = "Modern";
+								break; 
+					}
+					echo "Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . "."; \n;
+					echo "This makes it " . $recordRarity . "!"; \n;
+					echo "The quality of your record is " . $recordQuality . "."; \n;
+					echo "The current time is " . $currentTime . " and year is " . $currentYear . ".";
+					echo ". why did I tell you this? Because, I made variables and didn't want them to go to waste";					
+        		?>
+        	</p>
+        </div>
         
         <div id="spaceHolder"></div>
         	

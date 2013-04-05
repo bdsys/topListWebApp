@@ -315,9 +315,13 @@ header > h1 {
  
 /* Below is the unique main body */
  
+ #phpCenter {
+ 	margin: 10em 0 0 10em;
+ 	border: .1em solid black;
+ }
  
  #spaceHolder {
- 	height: 58em;
+ 	height: 48em;
  	width: 58em;
  }
  

@@ -188,11 +188,11 @@
 							  $recordEra = "Modern";
 								break; 
 					}
-					echo "Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . "."; \n;
-					echo "This makes it " . $recordRarity . "!"; \n;
-					echo "The quality of your record is " . $recordQuality . "."; \n;
-					echo "The current time is " . $currentTime . " and year is " . $currentYear . ".";
-					echo ". why did I tell you this? Because, I made variables and didn't want them to go to waste";					
+					echo "\n \n Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . "."; 
+					echo "\n \n This makes it " . $recordRarity . "!"; 
+					echo "\n \n The quality of your record is " . $recordQuality . "."; 
+					echo "\n \n The current time is " . $currentTime . " and year is " . $currentYear . ".";
+					echo "\n \n why did I tell you this? Because, I made variables and didn't want them to go to waste";					
         		?>
         		</p>
         		<p>
@@ -220,11 +220,11 @@
 							  $recordEra = "Modern";
 								break; 
 					}
-					echo "Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . "."; \n;
-					echo "This makes it " . $recordRarity . "!"; \n;
-					echo "The quality of your record is " . $recordQuality . "."; \n;
-					echo "The current time is " . $currentTime . " and year is " . $currentYear . ".";
-					echo ". why did I tell you this? Because, I made variables and didn't want them to go to waste";					
+					echo "\n \n Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . ".";  
+					echo "\n \n This makes it " . $recordRarity . "!";  
+					echo "\n \n The quality of your record is " . $recordQuality . ".";  
+					echo "\n \n The current time is " . $currentTime . " and year is " . $currentYear . ".";
+					echo "\n \n why did I tell you this? Because, I made variables and didn't want them to go to waste";					
         		?>
         		</p>
         		<p>
@@ -251,12 +251,14 @@
 						case $recordYear >= $currentYear -5:
 							  $recordEra = "Modern";
 								break; 
+						default:
+							$recordEra = "Classic";
 					}
-					echo "Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . "."; \n;
-					echo "This makes it " . $recordRarity . "!"; \n;
-					echo "The quality of your record is " . $recordQuality . "."; \n;
-					echo "The current time is " . $currentTime . " and year is " . $currentYear . ".";
-					echo ". why did I tell you this? Because, I made variables and didn't want them to go to waste";					
+					echo "\n \n Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . ".";  
+					echo "\n \n This makes it " . $recordRarity . "!";  
+					echo "\n \n The quality of your record is " . $recordQuality . ".";  
+					echo "\n \n The current time is " . $currentTime . " and year is " . $currentYear . ".";
+					echo "\n \n why did I tell you this? Because, I made variables and didn't want them to go to waste";					
         		?>
         		</p>
         		<p>
@@ -284,11 +286,11 @@
 							  $recordEra = "Modern";
 								break; 
 					}
-					echo "Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . "."; \n;
-					echo "This makes it " . $recordRarity . "!"; \n;
-					echo "The quality of your record is " . $recordQuality . "."; \n;
-					echo "The current time is " . $currentTime . " and year is " . $currentYear . ".";
-					echo ". why did I tell you this? Because, I made variables and didn't want them to go to waste";					
+					echo "\n \n Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . ".";  
+					echo "\n \n This makes it " . $recordRarity . "!";  
+					echo "\n \n The quality of your record is " . $recordQuality . ".";  
+					echo "\n \n The current time is " . $currentTime . " and year is " . $currentYear . ".";
+					echo "\n \n why did I tell you this? Because, I made variables and didn't want them to go to waste";					
         		?>
         	</p>
         </div>

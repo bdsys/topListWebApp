@@ -370,7 +370,7 @@ header > h1 {
 	display:inline-block;
 	height: auto;
 	width: 20%;
-	margin: 3% auto auto 2%;
+	margin: 2% auto auto 2%;
 	border: .2em solid black;
 	float: left;
 	font-family:"Agency FB";
@@ -400,8 +400,8 @@ header > h1 {
 .newsTable {
 	height: auto;
 	width: 20%;
-	border: .5em solid black;
-	margin: 2% auto auto auto;
+	border: .2em solid black;
+	margin: 2% auto 7% auto;
 	font-family: cursive;
 	overflow: hidden;
 }

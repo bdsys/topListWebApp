@@ -195,104 +195,52 @@
 					echo "\n \n why did I tell you this? Because, I made variables and didn't want them to go to waste";					
         		?>
         		</p>
+        		
         		<p>
         		<?php
-        			$recordYear = 1950;
-        			$recordQuality = "Like New";
-        			$recordRarity = "Epic";
-					$recordEra = "";
-					$currentTime = time();
-					$currentYear = 2013;
-					
-					switch ($recordYear) {
-						case $recordYear <= 1975 && $recordYear >= 1960:
-							$recordEra = "Modern Classic";
-							break;
-						case $recordYear <= 1959 && $recordYear >= 1945:
-							$recordEra = "Oldies";
-							break;
-						case $recordYear >=1975 && $recordYear <=1989:
-							$recordEra = "Adult Contemporary";
-						case $recordYear >= $currentYear - 20 && $recordYear <= $currentYear -6:
-								$recordEra = "Modern Contemporary";
-								break;
-						case $recordYear >= $currentYear -5:
-							  $recordEra = "Modern";
-								break; 
-					}
-					echo "\n \n Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . ".";  
-					echo "\n \n This makes it " . $recordRarity . "!";  
-					echo "\n \n The quality of your record is " . $recordQuality . ".";  
-					echo "\n \n The current time is " . $currentTime . " and year is " . $currentYear . ".";
-					echo "\n \n why did I tell you this? Because, I made variables and didn't want them to go to waste";					
+        			 echo "\n \n Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . ".";
+        		?>
+        		</p>
+        		<br>
+        		<p>
+        		<?php
+        			 echo "\n \n This makes it " . $recordRarity . "!"; 
+        		?>
+        		</p>
+        		<br>
+        		<p>
+        		<?php
+        		 	echo "\n \n The quality of your record is " . $recordQuality . ".";
+        		?>
+        		</p>
+        		<br>
+        		<p>
+        		<?php
+        		 	echo "\n \n The current time is " . $currentTime . " and year is " . $currentYear . ".";
         		?>
         		</p>
         		<p>
         		<?php
-        			$recordYear = 1920;
-        			$recordQuality = "Like New";
-        			$recordRarity = "Epic";
-					$recordEra = "";
-					$currentTime = time();
-					$currentYear = 2013;
-					
-					switch ($recordYear) {
-						case $recordYear <= 1975 && $recordYear >= 1960:
-							$recordEra = "Modern Classic";
-							break;
-						case $recordYear <= 1959 && $recordYear >= 1945:
-							$recordEra = "Oldies";
-							break;
-						case $recordYear >=1975 && $recordYear <=1989:
-							$recordEra = "Adult Contemporary";
-						case $recordYear >= $currentYear - 20 && $recordYear <= $currentYear -6:
-								$recordEra = "Modern Contemporary";
-								break;
-						case $recordYear >= $currentYear -5:
-							  $recordEra = "Modern";
-								break; 
-						default:
-							$recordEra = "Classic";
-					}
-					echo "\n \n Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . ".";  
-					echo "\n \n This makes it " . $recordRarity . "!";  
-					echo "\n \n The quality of your record is " . $recordQuality . ".";  
-					echo "\n \n The current time is " . $currentTime . " and year is " . $currentYear . ".";
-					echo "\n \n why did I tell you this? Because, I made variables and didn't want them to go to waste";					
+        			echo "\n \n why did I tell you this? Because, I made variables and didn't want them to go to waste";
         		?>
         		</p>
-        		<p>
-        		<?php
-        			$recordYear = 2010;
-        			$recordQuality = "Like New";
-        			$recordRarity = "Epic";
-					$recordEra = "";
-					$currentTime = time();
-					$currentYear = 2013;
-					
-					switch ($recordYear) {
-						case $recordYear <= 1975 && $recordYear >= 1960:
-							$recordEra = "Modern Classic";
-							break;
-						case $recordYear <= 1959 && $recordYear >= 1945:
-							$recordEra = "Oldies";
-							break;
-						case $recordYear >=1975 && $recordYear <=1989:
-							$recordEra = "Adult Contemporary";
-						case $recordYear >= $currentYear - 20 && $recordYear <= $currentYear -6:
-								$recordEra = "Modern Contemporary";
-								break;
-						case $recordYear >= $currentYear -5:
-							  $recordEra = "Modern";
-								break; 
-					}
-					echo "\n \n Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . ".";  
-					echo "\n \n This makes it " . $recordRarity . "!";  
-					echo "\n \n The quality of your record is " . $recordQuality . ".";  
-					echo "\n \n The current time is " . $currentTime . " and year is " . $currentYear . ".";
-					echo "\n \n why did I tell you this? Because, I made variables and didn't want them to go to waste";					
-        		?>
-        	</p>
+        		
+        		<h2>Normal Globe</h2>
+        		<script type="text/javascript" src="http://jk.revolvermaps.com/2/1.js?i=aqbpmn1s083&amp;s=244&amp;m=0&amp;v=true&amp;r=true&amp;b=000000&amp;n=false&amp;c=007eff" async="async"></script>
+        		<br>
+        		<br>
+        		<h2>Mini Globe</h2>
+        		<script type="text/javascript" src="http://jk.revolvermaps.com/2/2.js?i=ajpswvo7jxh&amp;m=0&amp;s=130&amp;c=007eff&amp;t=1" async="async"></script>
+        		<br>
+        		<br>
+        		<h2>Normal flat map (Flash)</h2>
+        		<script type="text/javascript" src="http://jk.revolvermaps.com/p.js"></script><script type="text/javascript">rm2d_ki101('0','302','151','aw7jfyyol2s','007eff',40);</script>
+        		<br>
+        		<br>
+        		<h2>Visitor Bar Graph</h2>
+        		<script type="text/javascript" src="http://jk.revolvermaps.com/2/0.js?i=a2ncmf97hur&amp;d=3&amp;p=0&amp;b=0&amp;w=293&amp;g=3&amp;f=tahoma&amp;fs=14&amp;r=0&amp;c0=000000&amp;c1=0006ff&amp;c2=0006ff&amp;ic0=0&amp;ic1=0" async="async"></script>
+        		<br>
+        		<br>
         </div>
         
         <div id="spaceHolder"></div>

@@ -395,13 +395,6 @@ header > h1 {
 	background-color: #66FF99;
 }
 
-.TopRecords li {
-	margin-top:5%;
-	font-family:Courier;
-	font-weight:800;
-}
-
-
 .album {
 	background-color:red;
 }
@@ -456,7 +449,7 @@ header > h1 {
 }
 
 .TopRecords {
-	margin: 1% 12% 2% auto;
+	margin: 1% 10% 2% auto;
 	height: 100%;
 	width: 80%;
 }
@@ -465,6 +458,12 @@ header > h1 {
 	height:12em;
 	width:12em;
 	border: .5em solid black;
+}
+
+.TopRecords li {
+	margin-top:5%;
+	font-family:Courier;
+	font-weight:800;
 }
 
 /* Artist Toplist below */

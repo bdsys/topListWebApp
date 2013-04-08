@@ -214,39 +214,39 @@
 					$zeppelinRecords = array("Led Zeppelin", "Led Zeppelin II", "Led Zeppelin IV");
 					$arrI = 0;
         		?>
-        		
-        		<br>
-        		<p>
+        		       	
         		<?php
-        			echo "<br> <p>Records by " . $artist . "</p>";
-					
-					switch ($artist) {
-						case ("Rush" || "rush"):
-							for ($arrI; $arrI < count($rushRecords); $arrI = $arrI++) {				
-								echo "<p>" . $rushRecords[$arrI] . "</p><br>";
-							}
-						case ("Led Zeppelin" || "led zeppelin"):
-							for ($arrI; $arrI < count($zeppelinRecords); $arrI = $arrI++) {
-								echo "<p>" . $zeppelinRecords[$arrI] . "</p><br>";
-							}
-						break;
-					}	
+        		 echo "<br><p> YAY Records!!!</p>";
         		?>
         		
-        		<?php				
-					$arrI = 0;
-					
-					for ($arrI; $arrI < count($myRecordList); $arrI = $arrI++) {			
-								echo "<p>" . $myRecordList[$arrI] . "</p><br>";
-							}	
-        		?>	
-        		</p>
-        		<br>
-        		<br>
-        		<p>
+        		<?php
+        			echo "<p>". $myRecordList[0] . "</p>";
+					echo "<p>". $myRecordList[1] . "</p>";
+					echo "<p>". $myRecordList[2] . "</p>";
+					echo "<p>". $myRecordList[3] . "</p>";
+        		?>
+        		
         		<?php
         		 echo "<br><p> YAY " . $artist . "!!!</p>";
         		?>
+        		
+        		<?php
+        			echo "<p>". $rushRecords[0] . "</p>";
+					echo "<p>". $rushRecords[1] . "</p>";
+					echo "<p>". $rushRecords[2] . "</p>";
+        		?>
+        		
+        		<?php
+        		 echo "<br><p> YAY Led Zeppelin!!!</p>";
+        		?>
+        		
+        		<?php
+        			echo "<p>". $zeppelinRecords[0] . "</p>";
+					echo "<p>". $zeppelinRecords[1] . "</p>";
+					echo "<p>". $zeppelinRecords[2] . "</p>";
+        		?>
+        		
+        		
         		</p>
         		
         		<h2>Normal Globe</h2>

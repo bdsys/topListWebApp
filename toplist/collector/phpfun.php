@@ -141,29 +141,25 @@
         <!-- Below is the unique main body -->
         
         <div id="phpCenter">
-        	<h2>
+
         		<?php
-        			echo "Howdy, Friends!";
+        			echo "<h2> Howdy, Friends! </h2>";
         		?>
-        	</h2>
-        	<br>   
-        	<p>
+
         		<?php
         			$userName = "Andrew";
 					$userAge = 23;
-					echo "My name is" ." ". $userName ." ". "and I'm" ." ". $userAge ." ". "years old!";
+					echo "<p> My name is" ." ". $userName ." ". "and I'm" ." ". $userAge ." ". "years old! </p>";
 					
 					if ($userName == "Andrew" && $userAge == 23) {
-						echo "That is indeed his name and age! I should know, my logical control flow tells me so!";
+						echo "<p>That is indeed his name and age! I should know, my logical control flow tells me so! </p>";
 					} elseif ($userName == "Andrew" && $userAge != 23) {
-						echo "That's his name but that age ain't right!";
+						echo "<p> That's his name but that age ain't right! </p>";
 					} else {
-						print "srsly who cares, this flow will never get this far!";
+						print "<p> srsly who cares, this flow will never get this far!</p>";
 					}
         		?>
-        	</p>
-        	<br>
-        	<p>
+        		
         		<?php
         			$recordYear = 1974;
         			$recordQuality = "Like New";
@@ -187,41 +183,69 @@
 						case $recordYear >= $currentYear -5:
 							  $recordEra = "Modern";
 								break; 
-					}
-					echo "\n \n Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . "."; 
-					echo "\n \n This makes it " . $recordRarity . "!"; 
-					echo "\n \n The quality of your record is " . $recordQuality . "."; 
-					echo "\n \n The current time is " . $currentTime . " and year is " . $currentYear . ".";
-					echo "\n \n why did I tell you this? Because, I made variables and didn't want them to go to waste";					
+					}				
         		?>
-        		</p>
+
+        		<?php
+        			 echo "<br> 
+        			 	   <p> Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . ". </p>";
+        		?>
+
+        		<?php
+        			 echo "<p> This makes it " . $recordRarity . "! </p>"; 
+        		?>
+
+        		<?php
+        		 	echo "<p> The quality of your record is " . $recordQuality . ". </p>";
+        		?>
+
+        		<?php
+        		 	echo "<p> The current time is " . $currentTime . " and year is " . $currentYear . ". </p>";
+        		?>
+
+        		<?php
+        			echo "<p> why did I tell you this? Because, I made variables and didn't want them to go to waste </p";
+        		?>
         		
-        		<p>
         		<?php
-        			 echo "\n \n Your record was pressed in " . $recordYear . " and is considerd " . $recordEra . ".";
+        			$artist = "rush";
+        			$myRecordList = array("2112, Rush", "Led Zeppelin I, Led Zeppelin", "Trick of the Tail, Genesis", "5150, Van Halen");
+					$rushRecords = array("Caress of Steel", "2112", "Moving Pictures");
+					$zeppelinRecords = array("Led Zeppelin", "Led Zeppelin II", "Led Zeppelin IV");
+					$arrI = 0;
         		?>
-        		</p>
+        		
         		<br>
         		<p>
         		<?php
-        			 echo "\n \n This makes it " . $recordRarity . "!"; 
+        			echo "<br> <p>Records by " . $artist . "</p>";
+					
+					switch ($artist) {
+						case ("Rush" || "rush"):
+							for ($arrI; $arrI < count($rushRecords); $arrI = $arrI++) {				
+								echo "<p>" . $rushRecords[$arrI] . "</p><br>";
+							}
+						case ("Led Zeppelin" || "led zeppelin"):
+							for ($arrI; $arrI < count($zeppelinRecords); $arrI = $arrI++) {
+								echo "<p>" . $zeppelinRecords[$arrI] . "</p><br>";
+							}
+						break;
+					}	
         		?>
+        		
+        		<?php				
+					$arrI = 0;
+					
+					for ($arrI; $arrI < count($myRecordList); $arrI = $arrI++) {			
+								echo "<p>" . $myRecordList[$arrI] . "</p><br>";
+							}	
+        		?>	
         		</p>
+        		<br>
         		<br>
         		<p>
         		<?php
-        		 	echo "\n \n The quality of your record is " . $recordQuality . ".";
-        		?>
-        		</p>
-        		<br>
-        		<p>
-        		<?php
-        		 	echo "\n \n The current time is " . $currentTime . " and year is " . $currentYear . ".";
-        		?>
-        		</p>
-        		<p>
-        		<?php
-        			echo "\n \n why did I tell you this? Because, I made variables and didn't want them to go to waste";
+        		 echo "<br><p> YAY " . $artist . "!!!</p>";
         		?>
         		</p>
         		

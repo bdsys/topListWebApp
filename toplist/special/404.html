@@ -2,41 +2,15 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-    	<link type"text/css" rel="stylesheet" href="splash-home.css"/>
+    	<link type"text/css" rel="stylesheet" href="404.css"/>
     	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script> <!-- Calls Jquery library from teh netz  You may want to host this server side after dev work:)--> 
     	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script> <!-- This too ^.^ -->
-    	<script type="text/javascript" src="splash-main.js"></script>
+    	<script type="text/javascript" src="404.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Collector Net</title>
-        <meta http-equiv="REFRESH" content="3;url=/collector">
     </head>
       <!-- Everything below this in every site -->
-    <body>
-    	
-    	<!-- Below is a fixed welcome banner ONLY ON THIS PAGE -->
-    	
-    <!--	<div class="welcomeBanner">
-        	<img class="exitX" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFzLSTJ4t4PSRlYjKkGf_45ikmwEt1TaikQNWwH_DIncNlKziz-w" />
-        	<p> Welcome! </p>
-        	<br>
-        	<p>Looks like this is your first time visting.</p>
-        	<br>
-        	<a href="/collector" target="_blank"><button>Register an account</button></a>
-        	<br>
-        	<p> Click <a href="http://www.bdsys.net/" target="_blank">here</a>
-        	   for more information.</p>
-        	<br>
-        	
-        	<form>
-        		Username: <input type="text" name="username"/>
-        		<br>
-        		<br>
-        		Password: <input type="password" name="password" />
-        	</form>
-        	<div id="signIn">
-        		<h6>Sign In</h6>
-        	</div>
-        </div> -->
+    <body>  	
     	
     	 <!-- Header below is on every page -->
     	 
@@ -73,7 +47,7 @@
     			
     	<a href="/collector"> <div class="leftToolbarButton" id="myVinylButton">
     			 My 
-    		<br>Collection 
+    		<br>Collections 
     	</div> </a>
     		
     		<br>
@@ -129,7 +103,7 @@
     		
     		<table class="favTableLeftToolbar" id="myDisplay">
     			<tbody>
-    				<th>Toplist Display</th> 				
+    				<th>Collection Toplist to Display</th> 				
     					<tr>
     						<td class="leftToolbarButton" id="vinylToplist">				
     							<button>Vinyl Toplist</button>						
@@ -163,12 +137,61 @@
     	<!-- Everything above this is the LEFT TOOLBAR CONTAINER FOR EVERY PAGE -->
         
         <!-- Below is the unique main body -->
-      
-      <div id="loading">
-      	<h1>Loading Toplist <br> 
-      		Patience, Padawan...</h1>
-      	<img src="http://www.onlinedesignteacher.com/images/loadingbar.gif" alt="loading" />
-      </div>
+        
+        <div class="forOhForDiv">
+        	<h2 id="forOhForDisplay"> 404 <br> Page Not Found </h2>
+        	<p id="centerUnder404Text">No worries, its not that bad ;)</p>
+        	
+        		<br>
+        		
+        		<h3 id="reasonList">List of reasons this page is showing:</h3>
+        		<ol>
+        			<br>
+        	    	<li>*You have typed something in the URL bar that is completely wrong <br> <br>*I.E</li>
+        	    		<ul>
+        	    			<li>- dev.bdsys.net/definitelyNotHere</li>
+        	    			<br>
+        	    			<li>- dev.bdsys.net/collector/NopeNotHereEither</li>
+        	    			<br>
+        	    			<li>- dev.bdsys.net/collector/vinyl/thisDoesntExist</li>
+        	    			<br>
+        	    		</ul>
+        	    	<li>*You clicked something that we linked completely wrong and lead you here</li>
+        	    		<br>
+        	    		<ul>
+        	    			<li>-If that is the case, we appologize and please let us know <a href="dev.bdsys.net/bugs/">here</a></a></li>
+        	    			<br>
+        	    		</ul>
+        	    	<lI>*Something unforeseen and unexplainable</lI>
+        	    		<br>
+        	    		<ul>
+        	    			<li>-Exciting! You should be excited</li>
+        	    		</ul>
+        		</ol>
+        	</div>
+        			
+        	<div class="dictionary">
+        		<h2 id="dictionaryDisplay">Error Four Hundred And Four</h2>
+        		<p class="italicObject">n.</p>
+        		<ol>
+        			<li>
+        				<ul>
+        					<li> <br> a. A thing the internet's residents possess to express that this page you are looking for does not exist</li>
+        					<li> <br> b. A place that informs visitors of a web page that what they seek does not exist </li>
+        				</ul>
+        			</li>
+        		</ol>
+        		<br>
+        		<p class="italicObject">a.</p>
+        		<ol>
+        			<li>
+        				<ul>
+        					<li>a. A description used to describe the absence of something <br> I.E:
+        						<li>"Dude, your car is 404!"</li></li>
+        				</ul>
+        			</li>
+        		</ol>
+        	</div>
         
         
         <div id="spaceHolder"></div>
@@ -235,7 +258,7 @@
         					<h6>Page Design by: Andrew Lass<br> Made In Morro Bay California</h6>
     			 	  	    <p>&copy; Black Dog Systems</p>
     			 	  	    <br>
-     				  	 	<a href="www.bdsys.net"><img id="footerLogo" src="http://0.gravatar.com/avatar/4597b5aed4bffe5f78c0e8bca8eff670?s=78&d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D78&r=G" alt="Black Dog Systems Homepage"/></a>
+     				  	 	<a href="www.bdsys.net"><img id="footerLogo" src="http://bdsys.net/ihost/?dm=JP0J" alt="Black Dog Systems Homepage"/></a>
       				  		<br>
       				  		<a href="www.bdsys.net/about">
       				  			<p> About BDS </p></a>

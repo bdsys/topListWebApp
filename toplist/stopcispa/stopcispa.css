@@ -1,0 +1,126 @@
+/* http://www.bdsys.net/ Design by Black Dog Systems
+ * By: Andrew Lass 02/13/2013 
+ *  
+ Below is the CSS reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Above is the CSS reset (from meyer) http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 */
+
+/* Below are custom global conditions */
+
+body {
+	background-image:url('http://goldenageofgaia.com/wp-content/uploads/2012/04/Stop-Cispa3.jpg');
+	background-color:#000000;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30em;
+	background-attachment: fixed;
+} 
+
+a, #camoP {
+	text-decoration:none;
+	color:#FF0000;
+}
+
+a:hover, #camoP:hover, #learnToSwim:hover {
+	color: yellow;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+	color: white;
+}
+
+h1 {
+	font-size: 8.5em;
+	text-align: center;
+	font-family:"Courier New", Courier, monospace;
+}
+
+.textBlackout {
+	font-family:"Agency FB"; 
+	font-style: italic;
+}
+
+p {
+	font-size: 2em;
+	margin: 0 0 0 2em;
+	font-family:"Courier New", Courier, monospace;
+}
+
+.whyDiv {
+	display: inline-block;
+	margin: -12em 0 0 80em;
+	height: 20em;
+	width: 20em;
+}
+
+.whyDiv h2 {
+	font-size: 2.5em;
+	text-align: center;
+	font-family:"Courier New", Courier, monospace;
+}
+
+.whyDiv p {
+	font-size: 1em;
+}
+
+.toolDiv {
+	display: inline-block;
+	margin: -5em 0 0 2em;
+}
+
+.toolDiv p {
+	color:#662020;
+}
+
+footer {
+	margin: 0 2em 0 0;
+}
+
+#copyFooter {
+	text-align: center;	
+}

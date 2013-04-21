@@ -6,20 +6,21 @@
 
 $(document).ready(function ()
 {	
-	
 	// Below is Jquery that is on every page	
 		
 	//pull tab to show/hide left tool bar container
-	$(".toolDiv").hide();
+	$("#youtubeVid").hide();
 	$("#learnToSwim").click(function () {
-		$(".toolDiv").slideToggle("fast");		
+		$("#youtubeVid").slideToggle("fast");		
 	});
 
 	//pull tab to show/hide left tool bar container
 	$(".whyDiv").hide();
+	//$(".toolDiv").hide();
 	$("#camoP").click(function () {
-		$(".whyDiv").slideToggle("fast");		
-	});
+		$(".whyDiv").slideToggle("slow");		
+		//$(".toolDiv").slideToggle("slow");
+		// $(".whyFiller").css("display", "none");
+	}); 
 
 }); 
-

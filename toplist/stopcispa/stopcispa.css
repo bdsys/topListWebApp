@@ -60,9 +60,17 @@ body {
 	background-attachment: fixed;
 } 
 
-a, #camoP {
+a, #camoP, #learnToSwim {
 	text-decoration:none;
 	color:#FF0000;
+	display: list-item;
+	padding: .2em;
+}
+
+#wordLink {
+	display: inherit;
+	padding: none;
+	margin-bottom: .5em;
 }
 
 a:hover, #camoP:hover, #learnToSwim:hover {
@@ -92,8 +100,10 @@ p {
 }
 
 .whyDiv {
+	border: .2em solid white;
 	display: inline-block;
-	margin: -12em 0 0 80em;
+	float: right;
+	margin: -18em 8em 0 0;
 	height: 20em;
 	width: 20em;
 }
@@ -109,16 +119,14 @@ p {
 }
 
 .toolDiv {
-	display: inline-block;
-	margin: -5em 0 0 2em;
-}
-
-.toolDiv p {
-	color:#662020;
+	display:block;
+	height: 2em;
+	width: 20em;
+	margin: 1em 0 0 2em;
 }
 
 footer {
-	margin: 0 2em 0 0;
+	margin: 0 3em 0 0;
 }
 
 #copyFooter {

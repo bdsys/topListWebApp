@@ -2,185 +2,365 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-    	<link type"text/css" rel="stylesheet" href="genre.css"/>
+    	<link type="text/css" rel="stylesheet" href="topgenre.css"/>
+    	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script> <!-- Calls Jquery library from teh netz  You may want to host this server side after dev work:)--> 
+    	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script> <!-- This too ^.^ -->
+    	<script type="text/javascript" src="topgenre.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Vinyl Collector | Genres</title>
+        <title>Top Genres</title>
     </head>
       <!-- Everything below this in every site -->
-    <header>
+    <body>   	
+    	 <!-- Header below is on every page -->
+    	 
+    <header id="topofpage">
         <h1>Vinyl Collection</h1>
         
-        <table>
+        <nav id="navHead">
+        <table class="TopToolbarContainer">
         	<tbody>
         		<tr>
-        			<td class="td-head">
-        				<a href="/collector/vinyl/">Home</a>
+        			<td>
+        				<a href="/collector/">Home</a>
         			</td>
-        			<td class="td-head">
-        				<a href="/collector/vinyl/genre/">Genres</a>
+        			<td>
+        				<a href="/collector/about">About</a>
         			</td>
-        			<td class="td-head">
+        			<td>
         				<a href="http://shop.bdsys.net/">Store</a>
         			</td>
-        			<td class="td-head">
+        			<td>
         				<a href="http://parked.bdsys.net/parked2/lolcat/">That</a>
         			</td>
         		</tr>
         	</tbody>
         </table>
+        </nav>
         </header>
-        <!-- Everything above this in every site -->
-    
-    <body>
-    	
-    	<!-- Everything below this is the LEFT TOOLBAR CONTAINER FOR EVERY PAGE -->
-    	<div></div>
-    	<div>
-    		
-    		<p> My Vinyl
-    		<br> Collection </p>
-    		
+        <!-- Header above is on every page -->
+        
+    <!-- Everything below this is the LEFT TOOLBAR CONTAINER FOR EVERY PAGE -->
+   
+    	<div class="LeftToolbarContainer">
+    		<nav id="navLeftToolbar">
+    			
+    	<a href="/collector"> <div class="leftToolbarButton" id="myVinylButton">
+    			 My [list here]
+    		<br>Collection 
+    	</div> </a>
     		
     		<br>
-    		<p>My Favorite</p>
-    			<ul>
-    				<li>Artists</li>
-    				<li>Records</li>
-    			</ul>
-    		</ul>
+    		
+    		<table class="favTableLeftToolbar" id="myFav">
+    			<tbody>
+    				<th>My Favorite</th> 				
+    			<tr>
+    				
+    				<td>
+    					<ul> 
+    					<a href="genre"><li>-Artists</li></a>    				
+    				 	<a href="/collector/vinyl/genre/rock/ledzep"><li>-Records</li></a>
+    				 	<a href="/collector"><li>-Collections</li></a>
+    				 	<a href="http://parked.bdsys.net/parked2/lolcat/"><li>-Cats</li></a>
+    				 	<a href="http://parked.bdsys.net/parked2/lolcat/"><li>-Cats</li></a>
+    				 	<a href="http://parked.bdsys.net/parked2/lolcat/"><li>-Cats</li></a>
+    				 	</ul> 
+    				</td>
+    				
+    			</tr>
+    			</tbody>
+    		</table>
+    		
+    		<form class="searchForm" name="searchBarLeftToolbar">
+    				<input type="text" name="Search" />
+    		</form>
     		<br>
-    		<p>Search</p>
-    		<div></div>
-    		<br>
-    		<p>My Collections</p>
-    			<ul>
-    			<a href="w"><li>Anime</li></a>
-    				<li>Books</li>
-    				<li>Cars</li>
-    				<li>Cards</li>
-    				<li>Coins</li>
-    				<li>Comics</li>
-    				<li>Toys</li>
-    			</ul>
+    		<a href="/collector"><div class="leftToolbarButton" id="searchButton"> Search </div></a> 
 
+    		<table class="myCollectTableLeftToolbar" id="myCollect">
+    			<tbody>
+    				<th>My Collections</th> 				
+    			<tr>
+    				
+    				<td>
+    					<ul> 
+    					<a href="genre"><li>-Anime</li></a>    				
+    				 	<a href="/collector/vinyl/genre/rock/ledzep"><li>-Books</li></a>
+    				 	<a href="/collector"><li>-Cars</li></a>
+    				 	<a href="http://parked.bdsys.net/parked2/lolcat/"><li>-Cards</li></a>
+    				 	<a href="http://parked.bdsys.net/parked2/lolcat/"><li>-Coins</li></a>
+    				 	<a href="http://parked.bdsys.net/parked2/lolcat/"><li>-Comics</li></a>
+    				 	<a href="http://parked.bdsys.net/parked2/lolcat/"><li>-Legos</li></a>
+    				 	<a href="http://parked.bdsys.net/parked2/lolcat/"><li>-Toys</li></a>
+    				 	<a href="http://parked.bdsys.net/parked2/lolcat/"><li>-Cats</li></a>  			
+    				 	</ul> 
+    				</td>
+    				
+    			</tr>
+    			</tbody>
+    		</table>
+    		
+    		<table class="favTableLeftToolbar" id="myDisplay">
+    			<tbody>
+    				<th>Collection Toplist to Display</th> 				
+    					<tr>
+    						<td class="leftToolbarButton" id="vinylToplist">				
+    							<button>Vinyl Toplist</button>						
+    						</td>
+    					</tr>
+    					<tr>
+    						<td class="leftToolbarButton" id="genreToplist">
+								<button>Genre Toplist</button>
+    						</td>
+    					</tr>
+    					<tr>
+    						<td class="leftToolbarButton" id="artistToplist"> 												
+    							<button>Artist Toplist</button>					
+    						</td>
+    					</tr>
+    					<tr>
+    						<td class="leftToolbarButton" id="recordToplist">					
+    							<button>Record Toplist</button>						
+    						</td>
+    					</tr>
+    					<tr>
+    						<td class="leftToolbarButton" id="catToplist">
+								<button>Cat Toplist</button>
+    						</td>
+    					</tr>
+    			</tbody>
+    		</table>
+			</nav>
     	</div> 
     	
     	<!-- Everything above this is the LEFT TOOLBAR CONTAINER FOR EVERY PAGE -->
         
-        <h2>Genres</h2>
-        <a id="back" href="/collector/vinyl/"><img src="http://bit.ly/11tRGfA"/></a>
+        <!-- Below is the unique main body -->
         
-        <table>
+        
+        <div id="spaceHolder"></div>
+        	
+         <!-- Above is the unique main body -->
+       <div class="mainBody" id="toplistGenre">
+    	
+    	<div class="pullTab"> 
+    		<p class="showBar"> Show </p> 
+    		<p class="hideBar"> Hide </p> 
+    	</div>
+        
+        <h2 class="topTitle">Top Genres</h2>  
+        
+        <table class="topTable" id="artistTopTable">
         	<tbody>
         		<tr>       			
         			<td>
-        				<a href="/collector/vinyl/genre/rock/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg"/>
-        				</a>        		
+        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>        	
+        				<p>Led Zeppelin</p>		
         			</td>
         			
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg"/>
-        				</a>          				
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>    
+        				<p>Led Zeppelin</p>  				
         			</td>
         			
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg"/>
-        				</a>      
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>
+        				<p>Led Zeppelin</p>
         			</td>
         			
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg"/>
-        				</a>        				
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>    	
+        				<p>Led Zeppelin</p>			
         			</td>
         		</tr>
         		<tr>       			
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg"/>
-        				</a>           		
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>        	
+        				<p>Led Zeppelin</p>		
         			</td>
         			
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg"/>
-        				</a>           				
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>    
+        				<p>Led Zeppelin</p>  				
         			</td>
         			
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg"/>
-        				</a>      
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>
+        				<p>Led Zeppelin</p>
         			</td>
         			
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg"/>
-        				</a>       				
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>    	
+        				<p>Led Zeppelin</p>			
         			</td>
         		</tr>
         		<tr>       			
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg"/>
-        				</a>          		
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>        	
+        				<p>Led Zeppelin</p>		
         			</td>
         			
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg"/>
-        				</a>        				
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>    
+        				<p>Led Zeppelin</p>  				
         			</td>
         			
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg"/>
-        				</a>      
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>
+        				<p>Led Zeppelin</p>
         			</td>
         			
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg"/>
-        				</a>      				
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>    	
+        				<p>Led Zeppelin</p>			
         			</td>
         		</tr>
-        		
+        		<tr>       			
+        			<td>
+        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>        	
+        				<p>Led Zeppelin</p>		
+        			</td>
+        			
+        			<td>
+        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>    
+        				<p>Led Zeppelin</p>  				
+        			</td>
+        			
+        			<td>
+        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>
+        				<p>Led Zeppelin</p>
+        			</td>
+        			
+        			<td>
+        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>    	
+        				<p>Led Zeppelin</p>			
+        			</td>
+        		</tr>
         	</tbody>
         </table>
-
-         <!-- Everything below this in every site -->
+        </div> 
+         <!-- Below is the footer in every page -->
     <footer>
-    	
-    	<a href="#topofpage"><img src="http://bit.ly/11tRGfA"/></a>
-    	
+    <nav id="navFoot">
     	<div>
-        	<ul>
-        		<a href="/collector/vinyl/"><li>Home</li></a>
-        		<a href="/collector/vinyl/genre/"><li>Genres</li></a>
-        		<a href="http://shop.bdsys.net/"><li>Store</li></a>
-        		<a href="http://parked.bdsys.net/parked2/lolcat"><li>That</li></a>
-        	</ul>
+    		<table>
+    			<tbody>
+    				
+    					<a href="#topofpage"><img id="TopofPageButton" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ_XgExcAcLplKOlIa7-SL8LR_1z_71y1a4pggjp4oRS2zwT1C" alt="This button goes to the top of this page"/></a>
+    					
+    				<tr class="LinkRowLeft">
+    				
+    					<td>
+    						<h3 class="navText">Collector Navigation</h3>
+    					
+    					</td>
+    					
+        				<ul>
+        					<td>
+        						<a href="/collector/vinyl/"><li>Home</li></a>
+        						<a href="/collector/about/"><li>About</li></a>
+        						<a href="http://shop.bdsys.net/"><li>Store</li></a>
+        						<a href="http://parked.bdsys.net/parked2/lolcat"><li>That</li></a>
+        					</td>
+        				</ul>
+        				</tr>
+ 						<tr class="LinkRowCenter">
+ 							       						
+       						<td>
+       							<h3 class="navText">Top Lists</h3>
+       						</td>
+       						
+        					<ul>
+        						<td>
+        							<a href="/collector/vinyl/toplist/"><li>Vinyl Top List</li></a>
+        							<a href="/collector/vinyl/popart/"><li>Artists Top List</li></a>
+        							<a href="/collector/vinyl/poprec/"><li>Records Top List</li></a>
+        							<a href="/collector/vinyl/blackroom/"><li>Black Room</li></a>
+        						</td>
+        					</ul>
+       					</tr>
+       					<tr class="LinkRowCenter">
+ 							       						
+       						<td>
+       							<h3 class="navText">Extras &amp; Fun</h3>
+       						</td>
+       						
+        					<ul>
+        						<td>
+        							<a href="/collector/vinyl/toplist/"><li>Release Room</li></a>
+        							<a href="/collector/vinyl/popart/"><li>Submit a bug</li></a>
+        							<a href="/collector/vinyl/poprec/"><li>Jobs</li></a>
+        							<a href="/collector/vinyl/blackroom/"><li>Black Room</li></a>
+        						</td>
+        					</ul>
+       					</tr>
+       					<tr class="LinkRowRight">
+       						<td>
+        					<h6>Page Design by: Andrew Lass<br> Made In Morro Bay California</h6>
+    			 	  	    <p>&copy; Black Dog Systems</p>
+    			 	  	    <br>
+     				  	 	<a href="www.bdsys.net"><img id="footerLogo" src="http://bdsys.net/ihost/?dm=JP0J" alt="Black Dog Systems Homepage"/></a>
+      				  		<br>
+      				  		<a href="www.bdsys.net/about">
+      				  			<p> About BDS </p></a>
+
+      				  		</td>
+      				  	</tr>
+      				  	<tr class="ConnectRow">
+      				  		<td>
+      				  			<br>
+      				  		
+      				  		<h3> Connect With Us </h3>
+      				  		
+      				  		<a href="mailto:admin@bdsys.net?subject=I (emotion you feel here) the Site!">
+      				  		<img id="emailIcon" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS253o3Gv3KJrDDtCRc9DOhQH0pIO4Igfx9l3XF4jDI7kmNLTdB9Q" alt="Email Icon"/></a> 
+      				  		
+      				  		<a href="https:///www.facebook.com/lass2112">
+      				  		<img id="facebookIcon" src="http://1.bp.blogspot.com/-KL5NxRS7sqY/Tjac52rFmpI/AAAAAAAAALw/WSL46Vc1ArA/s1600/Facebook_icon.jpg" alt="Facebook Icon"/></a>
+      				  		
+      				  		<a href="https://www.twitter.com">
+      				  		<img id="twitterIcon" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRo5W806gp_UGBAstQKT5LPHTARA227zFwLfMvbQUeAo8cH4KCK" alt="Twitter Icon"/></a>
+      				  		</td>
+      				  	</tr>
+        		</tbody>
+        	</table>
         </div>
-        
-        <div>
-        	<ul>
-        		<a href="/collector/vinyl/toplist/"><li>Top List</li></a>
-        		<a href="/collector/vinyl/popart/"><li>Popular Artists</li></a>
-        		<a href="/collector/vinyl/poprec/"><li>Popular Records</li></a>
-        		<a href="/collector/vinyl/blackroom/"><li>Rare Room (Black Room)</li></a>
-        	</ul>
-        </div>
-        <div>
-        	<p>Page Design by: Andrew Lass</p>
-     	    <p>&copy; Black Dog Systems</p>
-        	<a href="www.bdsys.net"><img src="http://bdsys.net/ihost/?dm=JP0J"/>
-        	</a>
-        	<p>BDS</p>
-        </div>
-        
+        </nav>
         </footer>
-        <!-- Everything above this is in every site -->
+        <!-- Everything above this is the footer in ever site. It contains the logo, additional links and a top of page button -->
+        
+    </body>
+    
 </html>

@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-    	<link type"text/css" rel="stylesheet" href="collector-main.css"/>
+    	<link type="text/css" rel="stylesheet" href="collector-main.css"/>
     	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script> <!-- Calls Jquery library from teh netz  You may want to host this server side after dev work:)--> 
     	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script> <!-- This too ^.^ -->
     	<script type="text/javascript" src="collector-main.js"></script>
@@ -22,7 +22,7 @@
         	<br>
         	<a href="/collector" target="_blank"><button>Register an account</button></a>
         	<br>
-        	<p> Click <a href="http://www.bdsys.net/" target="_blank">here</a>
+        	<p> Click <a href="http://www.bdsys.net/" target="_blank" class="italicBoldObject">here</a>
         	   for more information.</p>
         	<br>
         	

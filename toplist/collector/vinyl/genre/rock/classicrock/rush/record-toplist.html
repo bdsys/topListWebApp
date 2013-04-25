@@ -2,12 +2,12 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-    	<link type="text/css" rel="stylesheet" href="rock-artists.css"/>
+    	<link type="text/css" rel="stylesheet" href="record-toplist.css"/>
     	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script> <!-- Calls Jquery library from teh netz  You may want to host this server side after dev work:)--> 
     	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script> <!-- This too ^.^ -->
-    	<script type="text/javascript" src="rock-artists.js"></script>
+    	<script type="text/javascript" src="record-toplist.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Rock Artists</title>
+        <title>Collector Net</title>
     </head>
       <!-- Everything below this in every site -->
     <body>   	
@@ -139,131 +139,238 @@
         
         
         <div id="spaceHolder"></div>
- <div class="mainBody" id="toplistArtist">
+ <div class="mainBody" id="toplistRecord">
     	
     	<div class="pullTab"> 
     		<p class="showBar"> Show </p> 
     		<p class="hideBar"> Hide </p> 
     	</div>
-        
-        <h2 class="topTitle">Rock Artists</h2>  
-        
-        <table class="topTable" id="artistTopTable">
-        	<tbody>
-        		<tr>       			
+             
+          <h2 class="topTitle">Top  Records</h2>
+          
+          
+        <table class="TopRecords">       	        		        		
+        	<tbody>        			        	        	
+        		<tr>       	
         			<td>
-        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image" alt="Led Zeppelin 1 album & sleve image"/>
-        				</a>        	
-        				<p>Led Zeppelin</p>		
-        			</td>
-        			
-        			<td>
-        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
-        				</a>    
-        				<p>Led Zeppelin</p>  				
-        			</td>
-        			
+        				
+        		<div class="colorCodeTable">
+        		<div class="toggleInfo">
+        			<p>Click below to expand and drag me around</p>
+        		</div>
+        		
+        	  <table class="rarityTable">
+        				<tbody>
+        					<th class="rarityKey">Rarity Key</th>
+        						<tr class="keyVis">
+        							<td class="new">New</td>
+        						</tr>      
+        						<tr class="keyVis">
+        							<td class="likeNew">Like New </td>
+        						</tr>		
+        						<tr class="keyVis">
+        							<td class="good">Good</td>
+        						</tr>		
+        						<tr class="keyVis">
+        							<td class="bad">Bad</td>
+        						</tr>	
+        				 </tbody>
+        			</table>
+        					
+        		<table class="qualityTable">			
+        					<tbody>
+        						<th class="qualityKey">Quality Key</th>
+        						<tr class="keyVis">
+        							<td class="epic">Epic </td>
+        						</tr> 
+        						<tr class="keyVis">
+        							<td class="rare">Rare</td>
+        						</tr>      
+        						<tr class="keyVis">
+        							<td class="unCommon">Uncommon</td>
+        						</tr>
+        						<tr class="keyVis">
+        							<td class="common">Common</td>
+        						</tr>						
+        					</tbody>
+        				</table>    
+        				</div>
+        			</td>		
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
         					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
         				</a>
-        				<p>Led Zeppelin</p>
+        				<ul>
+        					<li> Album: <span class="album">Led Zeppelin 1</span> </li>
+        					<li>Release Date: <span class="relDate">1971</span> </li>
+        					<li>Condition: <span class="cond">Great</span> </li>
+        						<ul>
+        							<li>-sleave: <span class="sleave">Great</span> </li>
+        							<li>-LP: <span class="lp">Good</span> </li>
+        						</ul>
+        				</ul>      				
         			</td>
-        			
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
         					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
-        				</a>    	
-        				<p>Led Zeppelin</p>			
+        				</a>
+        				<ul>
+        					<li>Album: Led Zeppelin 1</li>
+        					<li>Release Date: 1971</li>
+        					<li>Condition: Great</li>
+        						<ul>
+        							<li>-sleave: Great</li>
+        							<li>-LP: Good</li>
+        						</ul>
+        				</ul>      				
+        			</td>
+        			<td>
+        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>
+        				<ul>
+        					<li>Album: Led Zeppelin 1</li>
+        					<li>Release Date: 1971</li>
+        					<li>Condition: Great</li>
+        						<ul>
+        							<li>-sleave: Great</li>
+        							<li>-LP: Good</li>
+        						</ul>
+        				</ul>      				
+        			</td>
+        			<td>
+        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>
+        				<ul>
+        					<li>Album: Led Zeppelin 1</li>
+        					<li>Release Date: 1971</li>
+        					<li>Condition: Great</li>
+        						<ul>
+        							<li>-sleave: Great</li>
+        							<li>-LP: Good</li>
+        						</ul>
+        				</ul>      				
         			</td>
         		</tr>
-        		<tr>       			
+        		<tr>       	
         			<td>
-        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image" alt="Led Zeppelin 1 album & sleve image"/>
-        				</a>        	
-        				<p>Led Zeppelin</p>		
-        			</td>
-        			
-        			<td>
-        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
-        				</a>    
-        				<p>Led Zeppelin</p>  				
-        			</td>
-        			
+        	<div class="moveRight"></div>		
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
         					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
         				</a>
-        				<p>Led Zeppelin</p>
+        				<ul>
+        					<li> Album: <span class="album">Led Zeppelin 1</span> </li>
+        					<li>Release Date: <span class="relDate">1971</span> </li>
+        					<li>Condition: <span class="cond">Great</span> </li>
+        						<ul>
+        							<li>-sleave: <span class="sleave">Great</span> </li>
+        							<li>-LP: <span class="lp">Good</span> </li>
+        						</ul>
+        				</ul>      				
         			</td>
-        			
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
         					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
-        				</a>    	
-        				<p>Led Zeppelin</p>			
+        				</a>
+        				<ul>
+        					<li>Album: Led Zeppelin 1</li>
+        					<li>Release Date: 1971</li>
+        					<li>Condition: Great</li>
+        						<ul>
+        							<li>-sleave: Great</li>
+        							<li>-LP: Good</li>
+        						</ul>
+        				</ul>      				
+        			</td>
+        			<td>
+        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>
+        				<ul>
+        					<li>Album: Led Zeppelin 1</li>
+        					<li>Release Date: 1971</li>
+        					<li>Condition: Great</li>
+        						<ul>
+        							<li>-sleave: Great</li>
+        							<li>-LP: Good</li>
+        						</ul>
+        				</ul>      				
+        			</td>
+        			<td>
+        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>
+        				<ul>
+        					<li>Album: Led Zeppelin 1</li>
+        					<li>Release Date: 1971</li>
+        					<li>Condition: Great</li>
+        						<ul>
+        							<li>-sleave: Great</li>
+        							<li>-LP: Good</li>
+        						</ul>
+        				</ul>      				
         			</td>
         		</tr>
-        		<tr>       			
-        			<td>
-        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image" alt="Led Zeppelin 1 album & sleve image"/>
-        				</a>        	
-        				<p>Led Zeppelin</p>		
-        			</td>
-        			
-        			<td>
-        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
-        				</a>    
-        				<p>Led Zeppelin</p>  				
-        			</td>
-        			
+        		<tr>       	
+        			<td>		
+        		<div class="moveRight"></div>	
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
         					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
         				</a>
-        				<p>Led Zeppelin</p>
+        				<ul>
+        					<li> Album: <span class="album">Led Zeppelin 1</span> </li>
+        					<li>Release Date: <span class="relDate">1971</span> </li>
+        					<li>Condition: <span class="cond">Great</span> </li>
+        						<ul>
+        							<li>-sleave: <span class="sleave">Great</span> </li>
+        							<li>-LP: <span class="lp">Good</span> </li>
+        						</ul>
+        				</ul>      				
         			</td>
-        			
-        			<td>
-        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
-        				</a>    	
-        				<p>Led Zeppelin</p>			
-        			</td>
-        		</tr>
-        		<tr>       			
-        			<td>
-        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image" alt="Led Zeppelin 1 album & sleve image"/>
-        				</a>        	
-        				<p>Led Zeppelin</p>		
-        			</td>
-        			
-        			<td>
-        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
-        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
-        				</a>    
-        				<p>Led Zeppelin</p>  				
-        			</td>
-        			
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
         					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
         				</a>
-        				<p>Led Zeppelin</p>
+        				<ul>
+        					<li>Album: Led Zeppelin 1</li>
+        					<li>Release Date: 1971</li>
+        					<li>Condition: Great</li>
+        						<ul>
+        							<li>-sleave: Great</li>
+        							<li>-LP: Good</li>
+        						</ul>
+        				</ul>      				
         			</td>
-        			
         			<td>
         				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
         					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
-        				</a>    	
-        				<p>Led Zeppelin</p>			
+        				</a>
+        				<ul>
+        					<li>Album: Led Zeppelin 1</li>
+        					<li>Release Date: 1971</li>
+        					<li>Condition: Great</li>
+        						<ul>
+        							<li>-sleave: Great</li>
+        							<li>-LP: Good</li>
+        						</ul>
+        				</ul>      				
+        			</td>
+        			<td>
+        				<a href="/collector/vinyl/genre/rock/ledzep/zep1/">
+        					<img src="/collector/vinyl/genre/rock/ledzep/zep1/ledzep01.jpg" alt="Led Zeppelin 1 album & sleve image"/>
+        				</a>
+        				<ul>
+        					<li>Album: Led Zeppelin 1</li>
+        					<li>Release Date: 1971</li>
+        					<li>Condition: Great</li>
+        						<ul>
+        							<li>-sleave: Great</li>
+        							<li>-LP: Good</li>
+        						</ul>
+        				</ul>      				
         			</td>
         		</tr>
         	</tbody>

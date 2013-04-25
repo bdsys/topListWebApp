@@ -160,8 +160,8 @@ header > h1 {
 	width: 8.5%;
 	height: 100%;
 	float: left;
-	border-right: .2em solid black;
-	border-top: .2em solid black;
+	border: .2em solid black;
+	border-left:none;
 	background-color:#838BB1;
 
 }

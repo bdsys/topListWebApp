@@ -59,6 +59,45 @@ a {
 	text-decoration:none;
 }
 
+.unFinished {
+	border: .2em solid black;
+}
+
+.backgroundColorText {
+	color:#838BB1;
+}
+
+.blackText {
+	color:#000000;
+}
+
+.blackHighlight {
+	background:#000000;
+}
+
+.whiteHighlight {
+	background:#FFFFFF;
+}
+
+.italicBoldObject {
+	font-style: italic;
+	font-weight: bold;
+	font-family: sans-serif, monospace;
+}
+
+.italicObject {
+	font-style: italic;
+	font-family:"Agency FB", sans-serif, monospace;
+	font-size:large;
+	padding: 0 .2em 0 .2em;
+}
+
+.largeLetter {
+	font-size:larger;
+	font-weight:bold;
+	font-family:"Arial Rounded MT Bold", sans-serif, monospace;
+}
+
 /*Above are custom global conditions */
 
 /* Below is the header in every page, this includes the top screen H1 and nav bar */
@@ -107,11 +146,17 @@ header > h1 {
 	display:inline-block;
 	position:fixed;
 	border: .2em solid black;
-	background-color: white;
+	background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4d43pXa0rRFXz3UHKwhcanIqFODCoPEVRKkBrPSVYUtF6t4JkDA");
+	background-repeat: no-repeat;
+	background-size:cover;
 	height: 16em;
 	width: 20em;
-	margin: 20% auto auto 11%;
+	margin: 20% auto auto 60%;
 	border-radius: 5%;
+}
+
+.welcomeBanner p {
+	color:#FFFFFF;
 }
 
 .welcomeBanner p:last-of-type {
@@ -141,8 +186,8 @@ header > h1 {
 
 .exitX {
 	float:right;
-	height: 5%;
-	width: 5%;
+	height: 8%;
+	width: 8%;
 }
 
 .welcomeBanner button {
@@ -160,12 +205,10 @@ header > h1 {
 	width: 8.5%;
 	height: 100%;
 	float: left;
-	border-right: .2em solid black;
-	border-top: .2em solid black;
+	border: .2em solid black;
+	border-left:none;
 	background-color:#838BB1;
-
 }
-
 .favTableLeftToolbar {
 	font-family: cursive;
 	text-decoration:none;
@@ -412,7 +455,7 @@ footer table {
 	display:inline-block;
 	float:right;
 	height: 70%;
-	width: 8.3%;
+	width: 10%;
 	margin: 1% 1.5% 0 0;
 }
 
@@ -427,8 +470,8 @@ footer table {
 }
 
 #TopofPageButton {
-	height:3.2%;
-    width:3.2%;
+	height:5%;
+    width:5%;
     border-radius:100%;  
     border:3.2% solid white;
     margin: 2% 0 0 1%;

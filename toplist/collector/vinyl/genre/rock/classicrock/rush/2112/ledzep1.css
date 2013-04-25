@@ -101,48 +101,34 @@ body > div:nth-child(2) {
 
 /* Above is the left toolbar container */
 
-
-body > table {
-	margin:auto;
-	border:1em solid black;
-	 
-}
-
-#back {
-	display:block;
-	height: 2.5em;
-	width: 2.5em;
-	margin:auto;
-}
-
-#back img {
-	height:2.5em;
-    width:2.5em;
-    border-radius:100%;  
-}
-
-h2 {
-	font-weight:500;
-	font-size:2em;
-	font-family:cursive;
+body > h1 {
 	text-align:center;
 }
 
-td.main {
-	padding: 1em;	
-	border:.2em solid black;
+body table {
+	margin:auto;
 }
 
-td a img {
-	height:8em;
-	width:8em;
-	border: .5em solid black;
-	margin-left:3.5em;
+body > td a {
+	display:block;
+	margin:auto;
+	height:30em;
+	width:30em;
 }
 
-li {
-	font-family:Courier;
-	font-weight:800;
+body td img {
+	height:30em;
+	width:30em;
+	display:block;
+	margin:auto;
+}
+
+body td > ul {
+	margin-left: 5em;
+}
+
+body td ul li {
+	font-family:Tahoma;
 }
 
 /* Below FOOTER is in every page | Above body is unique to this page */

@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-    	<link type"text/css" rel="stylesheet" href="collector-main.css"/>
+    	<link type="text/css" rel="stylesheet" href="collector-main.css"/>
     	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script> <!-- Calls Jquery library from teh netz  You may want to host this server side after dev work:)--> 
     	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script> <!-- This too ^.^ -->
     	<script type="text/javascript" src="collector-main.js"></script>
@@ -22,7 +22,7 @@
         	<br>
         	<a href="/collector" target="_blank"><button>Register an account</button></a>
         	<br>
-        	<p> Click <a href="http://www.bdsys.net/" target="_blank">here</a>
+        	<p> Click <a href="http://www.bdsys.net/" target="_blank" class="italicBoldObject">here</a>
         	   for more information.</p>
         	<br>
         	
@@ -171,7 +171,7 @@
         		<tr>
         			<td id="signInDropToggle">Sign In</td> <!--Jquery drop down -->
         			<td id="spaceBetween"> - </td>
-        			<a href="/register"><td>Register</td></a>
+        			<td><a href="/toplist/collector/register"><span class="blackText">Register</span></a></td>
         		</tr>
         		<tr>
         			<td>
@@ -183,7 +183,7 @@
         					Password: <input type="password" name="password" />
         					</form>
         					<br>
-        					<button>Sign In</button>
+        					<a href="/toplist/collector"><button>Sign In</button></a>
         			</div>
         			</td>
         		</tr>
@@ -225,45 +225,44 @@
 					<td>
 					<div class="topBox">
 						<a href="/collector/vinyl/"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHdw9Yy9fdH7Wz_RHaKz1-8cB5PueySk_cPKsrPBT1Kvfr2tdX" /></a>
-						<h6>Vinyl Records Top List</h6>
+						<a href="/collector/vinyl/"><h6>Vinyl Records Top List</h6></a>
 					</div>
 					</td>
 				</tr>
 				<tr>
 					<td>
 					<div class="topBox">
-						<a href="/collector/vinyl/"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHdw9Yy9fdH7Wz_RHaKz1-8cB5PueySk_cPKsrPBT1Kvfr2tdX" /></a>
-						<h6>Cats Top List</h6>
+						<a href="/collector/vinyl/"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREAzD022Oc8OWt_2pIRpPEb3fJ2YUsi3SQbNrbCpnyBWAjEWudgQ" /></a>
+						<a href="/collector/vinyl/"><h6>Cats Top List</h6></a>
 					</div>
 					</td>
 				</tr>
 				<tr>
 					<td>
 					<div class="topBox">
-						<a href="/collector/vinyl/"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHdw9Yy9fdH7Wz_RHaKz1-8cB5PueySk_cPKsrPBT1Kvfr2tdX" /></a>
-						<h6>Gameboy Top List</h6>
+						<a href="/collector/vinyl/"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgyJDlvmxaSaQVDQeB4qoD4FyXeUg2OvI03m3a8Z-8wFSZoSOfTg" /></a>
+						<a href="/collector/vinyl/"><h6>Gameboy Top List</h6></a>
 					</div>
 					</td>
 				</tr>
 				<tr>
 					<td>
 					<div class="topBox">
-						<a href="/collector/vinyl/"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHdw9Yy9fdH7Wz_RHaKz1-8cB5PueySk_cPKsrPBT1Kvfr2tdX" /></a>
-						<h6>Epic Lewtz Records Top List</h6>
+						<a href="/collector/vinyl/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI2DiRIS_12W-ZscixGsrKnv7OA9iwuEEfIR9CkHCQIkAPogW9" /></a>
+						<a href="/collector/vinyl/"><h6>Epic Lewtz Top List</h6></a>
 					</div>
 					</td>
 				</tr>
 				<tr>
 					<td>
 					<div class="topBox">
-						<a href="/collector/vinyl/"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHdw9Yy9fdH7Wz_RHaKz1-8cB5PueySk_cPKsrPBT1Kvfr2tdX" /></a>
-						<h6>Guitars Records Top List</h6>
+						<a href="/collector/vinyl/"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8q9Re0_d8yam48WmdbtxPoKPNP6iOG_HaLfV91xVszIqy9Iaj" /></a>
+						<a href="/collector/vinyl/"><h6>Guitars Records Top List</h6></a>
 					</div>
 					</td>
 				</tr>
         	</tbody>
         </table> 
-        
         
         <table class="newsTable">
         	<tbody>
@@ -271,22 +270,50 @@
         		<tr>
         			<td>
         			<div class="newsArticle">
-        				<h2>OMG OMG OMG THIS HAPPEND</h2>
-        				<p>Ben Goldwasser and Andrew VanWyngarden formed the band while attending Wesleyan University during their freshman year "We weren't trying to start a band," remarked Goldwasser.
-        					 "We were just hanging out and showing each other music that we liked." They experimented with noise rock and electronica before settling on what Paco Alvarez of Spin calls 
-        					 "their current brand of shape-shifting psychedelic pop." They graduated in 2005 and toured extensively in support of the Time to Pretend EP, opening for indie pop band Of Montreal.       					 
-							The band first started with the name The Management, but since this name was already being used by another band, they later changed it to MGMT. This abbreviation stands for Management.</p>
+        				<h2>Beta & Development Info</h2>
+        				<p>
+        					<span class="largeLetter">Top List</span> is currently undergoing constant development. We love that you are testing out our site and please, 
+        					<br> <a href="mailto:admin@bdsys.net?subject=feedback">drop us a line</a>! 
+        					<br>
+        					<br>
+        					Our current development branch is:<br>
+        					<span class ="italicBoldObject">"Beta - V0.3 Unnamed"<br></span>
+        					<br>
+        					*Our Development version history:<br><br>
+        					<span class ="italicBoldObject">*V0.2.2: Not The Droid!</span><br>
+        						-This release was a minor beta release that reduced the load time and a custom 404 page to the application
+        						<br>
+        					<br>
+        					<span class ="italicBoldObject">*V0.2.1: Bugs fix</span><br>
+        					-Fixed top records table positioning issue for 1024x1980 res in firefox<br>
+							-Fixed Top 5 Lists list positioning issue for 1024x1980 res on the homepage<br>
+							-silent testing a global "Revolver Map" for tracking visitors graphically. (/collector/phpfun)<br>
+							<br>
+							<span class ="italicBoldObject">*V0.2: Splash N' Dash</span><br>
+								-A Minor feature push that added a loading screen upon requesting the application in a web browser<br>
+							<br>
+							<span class ="italicBoldObject">*V0.1: The Vaccine</span><br>
+							-Added new home page, about page and templates. Along with,various bug<br>
+							-fixes and code efficiancies.<br>
+						</p>
         			</div>
         			</td>
         		</tr>
         		<tr>
         			<td>
         			<div class="newsArticle">
-        				<h2>OMG OMG OMG THIS ALSO HAPPEND SRSLY</h2>
-        				<p>Ben Goldwasser and Andrew VanWyngarden formed the band while attending Wesleyan University during their freshman year "We weren't trying to start a band," remarked Goldwasser.
-        					 "We were just hanging out and showing each other music that we liked." They experimented with noise rock and electronica before settling on what Paco Alvarez of Spin calls 
-        					 "their current brand of shape-shifting psychedelic pop." They graduated in 2005 and toured extensively in support of the Time to Pretend EP, opening for indie pop band Of Montreal.       					 
-							The band first started with the name The Management, but since this name was already being used by another band, they later changed it to MGMT. This abbreviation stands for Management.</p>
+        				<h2>Infrastructural Design Info</h2>
+        				<p>
+        					<span class="largeLetter">H</span>ave you heard the interesting yet, amazing news!? We've deicded on two <span class="italicObject">amazing technologies</span> to use in our humble application:
+        					<br> 
+        					<br>*<a href="http://aws.amazon.com/ec2/"><span class="italicBoldObject">Amazon's AWS EC2</span></a>
+        																						<br> Thats Our Server Platform ;)
+        					<br>
+        					<br>*<a href="http://php.net/"><span class="italicBoldObject">PHP</span></a>
+        																			<br>Thats our backend server language!
+        					<br><br>
+        					These are big steps in the right direction, we feel, and large desicions that weren't made overnight. Check out this <a href="phpfun.php">link</a> to check out our fun with weaving PHP into this application!											
+        				</p>
         			</div>
         			</td>
         		</tr>
@@ -300,7 +327,7 @@
     		<table>
     			<tbody>
     				
-    					<a href="#topofpage"><img id="TopofPageButton" src="http://bit.ly/11tRGfA" alt="This button goes to the top of this page"/></a>
+    					<a href="#topofpage"><img id="TopofPageButton" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ_XgExcAcLplKOlIa7-SL8LR_1z_71y1a4pggjp4oRS2zwT1C" alt="This button goes to the top of this page"/></a>
     					
     				<tr class="LinkRowLeft">
     				
@@ -353,7 +380,7 @@
         					<h6>Page Design by: Andrew Lass<br> Made In Morro Bay California</h6>
     			 	  	    <p>&copy; Black Dog Systems</p>
     			 	  	    <br>
-     				  	 	<a href="www.bdsys.net"><img id="footerLogo" src="http://bdsys.net/ihost/?dm=JP0J" alt="Black Dog Systems Homepage"/></a>
+     				  	 	<a href="www.bdsys.net"><img id="footerLogo" src="http://s3.amazonaws.com/codecademy-production/profile_thumbnail/5110a11631e4b98fd10020c4_420022162.png" alt="Black Dog Systems Homepage"/></a>
       				  		<br>
       				  		<a href="www.bdsys.net/about">
       				  			<p> About BDS </p></a>

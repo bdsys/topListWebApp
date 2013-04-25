@@ -101,72 +101,34 @@ body > div:nth-child(2) {
 
 /* Above is the left toolbar container */
 
-body  {
-	background-color:#838BB1;
-} 
-
-
-h1 {
-	font-family:Vivaldi, Verdana, sans-serif;
-	font-weight:900;
-	font-size:5em;
+body > h1 {
 	text-align:center;
-	
 }
 
-body > table {
+body table {
 	margin:auto;
-	border:1em solid black;
 }
 
-h2 {
-	font-weight:500;
-	font-size:2em;
-	text-align:center;
-	font-family:cursive;
-}
-
-#back {
+body > td a {
 	display:block;
-	height: 2.5em;
-	width: 2.5em;
+	margin:auto;
+	height:30em;
+	width:30em;
+}
+
+body td img {
+	height:30em;
+	width:30em;
+	display:block;
 	margin:auto;
 }
 
-#back img {
-	height:2.5em;
-    width:2.5em;
-    border-radius:100%;  
+body td > ul {
+	margin-left: 5em;
 }
 
-/* COPY START HERE */ 
-
-.artistTopTable {
-	height: 10em;
-	width: 50em;
-}
-
-.artistTopTable td {
-	padding: 1em;	
-	border:.2em solid black;
-	height:35%;
-	width:35%;
-}
-
-.artistTopTable td img {
-	height: 8em;
-	width: 8em;
-	border: .5em solid black;
-	margin-left:20%;
-}
-
-p {
-	text-align:center;
-}
-
-li {
-	font-family:Courier;
-	font-weight:800;
+body td ul li {
+	font-family:Tahoma;
 }
 
 /* Below FOOTER is in every page | Above body is unique to this page */
